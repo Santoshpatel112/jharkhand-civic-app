@@ -1,0 +1,67 @@
+name: jharkhand_civic_reporter
+description: A comprehensive Flutter app for Jharkhand citizens to report civic issues with real-time backend integration.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # HTTP & API
+  http: ^1.1.0
+  dio: ^5.4.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # Real-time Communication
+  socket_io_client: ^2.0.3+1
+  
+  # Location Services
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  
+  # Image Handling
+  image_picker: ^1.0.4
+  cached_network_image: ^3.3.0
+  
+  # UI Components
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+  
+  # Utilities
+  intl: ^0.19.0
+  path: ^1.8.3
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
